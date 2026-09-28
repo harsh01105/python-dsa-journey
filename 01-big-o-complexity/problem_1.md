@@ -9,8 +9,9 @@ def find_max(numbers):
     return max_val
 ```
 
-**Your answer:** ______
+**Your answer:** O(n)
 
-**Explanation (write this after you attempt it):**
-- How many times does the loop run relative to the input size?
-- Does the runtime change if the list doubles in size?
+**Explanation:**
+- The loop runs once for every element, so n items means n iterations.
+- If the list doubles in size, the runtime roughly doubles (linear growth).
+- Space complexity is O(1) since only one extra variable (max_val) is used.

@@ -24,4 +24,9 @@ def contains_sorted(lst, target):
     return False
 ```
 
-**Your answer:** Which is faster for a list of 1,000,000 items, and what's each one's Big-O?
+**Your answer:** Approach B (binary search) is faster. A is O(n), B is O(log n).
+
+**Explanation:**
+- Linear search may check all 1,000,000 items in the worst case.
+- Binary search halves the search space each step, so it needs about 20 comparisons.
+- Binary search requires the list to be sorted, otherwise it gives wrong results.
